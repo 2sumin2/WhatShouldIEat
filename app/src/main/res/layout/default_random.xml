@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:baselineAligned="false"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="80sp"
+            android:text="돌려돌려 돌림판 "
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/roulette_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5sp"
+            android:gravity="center"
+            android:paddingBottom="40sp"
+            android:text="-돌림판을 눌러보세요!-"
+            android:textColor="#763781"
+            android:textSize="25sp" />
+
+        <FrameLayout
+            android:id="@+id/FrameLayout01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/roulette"
+                android:layout_width="290dp"
+                android:layout_height="290dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="center"
+                android:layout_marginStart="55dp"
+                android:layout_marginEnd="55dp"
+                android:onClick="rotate"
+                android:src="@drawable/one" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:src="@drawable/needle" />
+
+        </FrameLayout>
+        <TextView
+            android:id="@+id/re"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:gravity="center"
+            android:text=""
+            android:visibility="gone"
+            android:textSize="30sp" />
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="과연 오늘의 운명은..."
+            android:textSize="30sp" />
+        <TextView
+            android:id="@+id/blank"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:gravity="center"
+            android:visibility="gone"
+            android:text=""
+            android:textSize="30sp" />
+
+        <ImageView
+            android:layout_width="49dp"
+            android:layout_height="54dp"
+            android:layout_gravity="right"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="50dp"
+            android:clickable="true"
+            android:onClick="back"
+            android:id="@+id/backpink"
+            android:src="@drawable/back" >
+        </ImageView>
+        <ImageView
+            android:layout_width="49dp"
+            android:layout_height="54dp"
+            android:layout_gravity="right"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="50dp"
+            android:onClick="back"
+            android:id="@+id/backblue"
+            android:clickable="true"
+            android:visibility="gone"
+            android:src="@drawable/back2" >
+        </ImageView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingTop="20dp">
+
+            <TextView
+                android:id="@+id/goYoutube"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="90dp"
+                android:clickable="true"
+                android:onClick="youtube"
+                android:paddingLeft="15dp"
+                android:paddingBottom="15dp"
+                android:text="만들어 먹기  &#62;&#62;"
+                android:textSize="30sp"
+                android:visibility="gone" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="90dp"
+                android:clickable="true"
+                android:onClick="Main"
+                android:paddingRight="15dp"
+                android:text="&#60;&#60;  집으로 가는 길"
+                android:textSize="30sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/setting"
+        android:layout_width="48dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="315dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="16dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="closeSetting"
+        android:src="@drawable/setting" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="30dp"
+        android:paddingLeft="60dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:layout_marginBottom="30dp"
+            android:text="@string/setting_title" />
+
+        <!--기본설정>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:text="@string/setting_choose1"
+            android:clickable="true"
+            android:textColor="#000"
+            android:onClick="clickc2"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="80dp"
+            android:visibility="visible"
+            android:id="@+id/c1">
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:text="@string/c1_1"
+                android:id="@+id/c2_1"
+                android:tag="1"
+                android:textColor="#000"
+                android:fontFamily="@font/cafe"
+                android:clickable="true"
+                android:onClick="data"/>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:textColor="#000"
+                android:text="@string/c1_2"
+                android:id="@+id/c2_2"
+                android:fontFamily="@font/cafe"
+                android:tag="2"
+                android:clickable="true"
+                android:onClick="data"/>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:fontFamily="@font/cafe"
+                android:text="@string/c1_3"
+                android:textColor="#000"
+                android:id="@+id/c2_3"
+                android:tag="3"
+                android:clickable="true"
+                android:onClick="data"/>
+        </LinearLayout>
+
+
+        <!--테마변경>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:onClick="clickc3"
+                android:textColor="#000"
+                android:text="@string/setting_choose2"
+                android:textSize="30sp" />
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="80dp"
+            android:visibility="gone"
+            android:id="@+id/c2">
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:text="분홍색"
+                android:textColor="#000"
+                android:id="@+id/c3_1"
+                android:tag="1"
+                android:fontFamily="@font/cafe"
+                android:clickable="true"
+                android:onClick="color"/>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:textColor="#000"
+                android:text="하늘색"
+                android:id="@+id/c3_2"
+                android:fontFamily="@font/cafe"
+                android:tag="2"
+                android:clickable="true"
+                android:onClick="color"/>
+        </LinearLayout>
+
+
+        <!--플랫폼버전>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textSize="30sp"
+            android:text="@string/setting_choose3"
+            android:clickable="true"
+            android:onClick="clickc4"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:gravity="right"
+                android:textColor="#000"
+                android:layout_marginRight="60dp"
+                android:text="@string/c3"
+                android:visibility="gone"
+                android:id="@+id/c3"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

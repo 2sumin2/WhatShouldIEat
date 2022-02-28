@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:layout_marginTop="110dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="select4_3"
+            android:tag="1"
+            android:text="빵"
+            android:textSize="55sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5sp"
+            android:gravity="center"
+            android:text="(탁구왕 김제빵)"
+            android:textSize="30sp" />
+
+
+        <TextView
+            android:id="@+id/selection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25sp"
+            android:gravity="center"
+            android:tag=""
+            android:text="VS"
+            android:textSize="40sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25sp"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="select4_3"
+            android:tag="2"
+            android:text="디저트"
+            android:textSize="55sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5sp"
+            android:gravity="center"
+            android:text="(아아 + 마카롱 = 끝)"
+            android:textSize="30sp" />
+        <ImageView
+            android:layout_width="49dp"
+            android:layout_height="54dp"
+            android:layout_gravity="right"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="50dp"
+            android:clickable="true"
+            android:onClick="back"
+            android:id="@+id/backpink"
+            android:src="@drawable/back" >
+        </ImageView>
+        <ImageView
+            android:layout_width="49dp"
+            android:layout_height="54dp"
+            android:layout_gravity="right"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="50dp"
+            android:onClick="back"
+            android:id="@+id/backblue"
+            android:clickable="true"
+            android:visibility="gone"
+            android:src="@drawable/back2" >
+        </ImageView>
+    </LinearLayout>
+
+</LinearLayout>

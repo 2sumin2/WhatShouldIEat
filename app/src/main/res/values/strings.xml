@@ -1,0 +1,31 @@
+<resources>
+    <!--메인>>첫화면>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-->
+    <string name="app_name">나 지금 뭐 먹지?</string>
+    <!--설정>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-->
+    <string name="setting_title">설정</string>
+    <!--기본설정-->
+    <string name="setting_choose1">기본설정</string>
+    <string name="c1_1">기본</string>
+    <string name="c1_2">채식주의자(락토-오보)</string>
+    <string name="c1_3">다이어터</string>
+    <!--테마변경-->
+    <string name="setting_choose2">테마변경</string>
+    <string name="c2">coming soon</string>
+    <!--플랫폼버전-->
+    <string name="setting_choose3">플랫폼버전</string>
+    <string name="c3">ver 1.0.0</string>
+    <!--개발자정보-->
+    <string name="setting_choose4">개발자정보</string>
+    <string name="c4_1">2019212989 이수민</string>
+    <string name="c4_2">2019212985 손원익</string>
+    <!--오류신고-->
+    <string name="setting_choose5">오류신고</string>
+    <string name="c5">lsm001005@naver.com</string>
+    <!--기본>>첫화면>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-->
+    <string name="default_title">기본</string>
+    <!--다이어트>>첫화면>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-->
+    <string name="diet_title">다이어트</string>
+    <!--채식>>첫화면>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-->
+    <string name="vegetable_title">채식</string>
+
+</resources>
